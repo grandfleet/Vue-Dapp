@@ -6,13 +6,18 @@
  * @param {object} - privacy gown
  * @param {object} - security
  * @returns {survival}
+ * @summary Using information from https://codepen.io/wernerm/pen/LjggoV
  */
 import Vue from 'vue'
 import App from './App.vue'
 import Web3 from 'web3'
 import router from './router'
+import Vuetify from 'vuetify'
+// Ensure you are using css-loader
+import 'vuetify/dist/vuetify.min.css'
 
 Vue.config.productionTip = false
+Vue.use(Vuetify)
 
 window.addEventListener('load', function () {
   if (typeof web3 !== 'undefined') {
