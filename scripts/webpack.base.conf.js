@@ -37,7 +37,8 @@ module.exports = {
         options: {
           formatter: require('eslint-friendly-formatter'),
           configFile: resolve('config/eslint/.eslintrc.js'),
-          ignorePath: resolve('config/eslint/.eslintignore')
+          ignorePath: resolve('config/eslint/.eslintignore'),
+          emitWarning: true // allow for linting errors not to break builds
         }
       },
       {
