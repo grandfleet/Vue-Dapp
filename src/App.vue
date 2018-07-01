@@ -20,7 +20,7 @@
    * @summary typical jsdoc not working
    */
 export default {
-  name: 'app'
+   name: 'app'
 }
 </script>
 

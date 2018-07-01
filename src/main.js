@@ -5,7 +5,7 @@
  * @file  main.js
  * @param {object} - privacy gown
  * @param {object} - security
- * @returns {survival} 
+ * @returns {survival}
  */
 import Vue from 'vue'
 import App from './App.vue'
