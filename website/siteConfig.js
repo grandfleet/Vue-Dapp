@@ -21,26 +21,25 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site' /* title for your website */,
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com' /* your website url */,
-  baseUrl: '/' /* base url for your project */,
+  title: 'Vue Dapp info' /* title for your website */,
+  tagline: 'Documentation for my Dapp',
+  url: 'https://friendlyuser.github.io' /* your website url */,
+  baseUrl: '/Vue-Dapp/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'vue-dapp',
+  organizationName: 'David Li',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {doc: 'Users', label: 'Contracts'},
+    {doc: 'App', label: 'Docs'},
+    {doc: 'sm-Users', label: 'Smart Contracts'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
@@ -55,7 +54,7 @@ const siteConfig = {
 
   /* colors for website */
   colors: {
-    primaryColor: '#2E8555',
+    primaryColor: '#483D8B',
     secondaryColor: '#205C3B',
   },
 
@@ -75,7 +74,7 @@ const siteConfig = {
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' Your Name or Your Company Name',
+    ' David Li',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks

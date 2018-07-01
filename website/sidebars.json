@@ -7,8 +7,13 @@
   "docs-other": {
     "First Category": ["doc4", "doc5"]
   },
+  "Application": {
+    "App Files": ["App","main","users"],
+    "Components": ["Dashboard","Signup"],
+    "Router": ["index"]
+  },
   "Contracts": {
-    "Users": ["Users"],
-    "Migrations": ["Migrations"]
+    "Users": ["sm-Users"],
+    "Migrations": ["sm-Migrations"]
   }
 }
