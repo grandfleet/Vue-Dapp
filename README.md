@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/FriendlyUser/Vue-Dapp.svg?branch=master)](https://travis-ci.org/FriendlyUser/Vue-Dapp)
-# Usage of the truffle box
+# Summary
 
-This truffle box provides an excellent boilerplate for creating Dapps, after upgrading the authentication systems to include more information and looking into displaying all registered users.
+The can viewed at http://myFirstdApp.surge.sh, also this app uses vuetify, vue, metamask and truffle.
 
 ### Todo List
 -[ ] Deploy a navigation bar in vue.js instead of react (finish by July 8).
@@ -149,6 +149,12 @@ To build the application for production, use the build command. A production bui
 npm run build
 ```
 
+
+#### Viewing Documentation
+
+Viewing the docs can be build using the npm package http-server, because I'm using the plant-uml plugin, files must be built and then viewed.
+
+` http-server ./build -i`
 ### Tasks complete 
 
 #### Things to Added to this truffle box

@@ -40,7 +40,6 @@ const siteConfig = {
   headerLinks: [
     {doc: 'App', label: 'Docs'},
     {doc: 'sm-Users', label: 'Smart Contracts'},
-    {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
 
@@ -80,6 +79,11 @@ const siteConfig = {
     // Highlight.js theme to use for syntax highlighting in code blocks
     theme: 'default',
   },
+   markdownPlugins: [
+    (md) => {
+      require('remarkable-plantuml')(md, {base_path: './static'});
+    }
+  ],
 
   // Add custom scripts here that would be placed in <script> tags
   scripts: ['https://buttons.github.io/buttons.js'],

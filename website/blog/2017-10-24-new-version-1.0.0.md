@@ -6,3 +6,10 @@ authorFBID: 661277173
 ---
 
 This blog post will test file name parsing issues when periods are present.
+
+Test goes here.
+```uml
+@startuml
+Bob -> Alice : hello
+@enduml
+```

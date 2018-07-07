@@ -7,7 +7,16 @@ for filename in src/*.vue src/*.js src/**/*.vue src/**/*.js ; do
     echo "Using file $filename"
     echo "----------------------"
     baseFileName=$(basename $filename)
-    name=$(echo "$baseFileName" | cut -f 1 -d '.')
+    name=${filename//\//\-}  
+    #echo "$testName"
+    #if [ -e $filename ]
+    #then
+        # File exists
+    #    name=$(echo "$baseFileName" | cut -f 1 -d '.')
+    #    name="$name-other"
+    #else
+    #    name=$(echo "$baseFileName" | cut -f 1 -d '.')
+    #fi
     echo "Creating markdown for $name.md"
     echo "----------------------"
     documentation build $filename -f md -o docs/"$name.md"

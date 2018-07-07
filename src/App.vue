@@ -1,10 +1,3 @@
- /**
-   * @file App.vue
-   * @param {object} - privacy gown
-   * @param {object} - security
-   * @summary typical jsdoc not working
-   */
-   
 <template>
   <v-app>
     <v-navigation-drawer
@@ -55,7 +48,9 @@
       <blockquote> Cool App goes here</blockquote>
       <img src="./assets/logo.png" height="200px" />
       <router-view/>
+      
     </v-content>
+        
     <v-navigation-drawer
       temporary
       :right="right"
@@ -72,20 +67,30 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
-    </v-footer>
+    <app-footer />
   </v-app>
 </template>
 
+
 <script>
+  // Imports
+  import Footer from './components/Footer.vue'
+  import 'font-awesome/css/font-awesome.css'
  /**
    * @file App.vue
    * @param {object} - privacy gown
    * @param {object} - security
    * @summary typical jsdoc not working
+   * ```uml
+   * @startuml
+   * Bob -> Alice : hello
+   * @enduml
+   * ```
    */
   export default {
+    components: {
+      'app-footer': Footer
+    },
     data () {
       return {
         clipped: false,
@@ -98,7 +103,7 @@
         miniVariant: false,
         right: true,
         rightDrawer: false,
-        title: 'Vuetify.js'
+        title: 'Truffle Dapp'
       }
     },
     name: 'App'
